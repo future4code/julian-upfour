@@ -1,0 +1,168 @@
+        /*Geral*/
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Sen', sans-serif
+        }
+        
+        body {
+            background-color: #1f1f24;
+        }
+        /*Menu de navegação*/
+        
+        nav {
+            background-color: #d2c2b0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            height: 10vh;
+            font-weight: bold;
+        }
+        /*Seções*/
+        
+        section {
+            background-color: #d2c2b0;
+            height: 100vh;
+            width: 80vw;
+            margin-right: 40px;
+            margin-left: 40px;
+            border: 2px solid #d2c2b0;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        #logo-container {
+            display: grid;
+            justify-content: center;
+        }
+        
+        #logo-container img {
+            margin-top: 3vh;
+            margin-left: 3vw;
+        }
+        /*foto - quem somos*/
+        
+        #rocinha {
+            height: 30%;
+            width: 60%;
+        }
+        /*foto - cases de sucesso*/
+        
+        #clementina {
+            height: 30%;
+            width: 60%;
+        }
+        
+        #mercado {
+            height: 30%;
+            width: 60%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #1f1f24;
+        }
+        
+        p {
+            margin-top: 5vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+        }
+        /*footer*/
+        
+        footer {
+            margin-top: 10vh;
+            background-color: #d2c2b0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-size: 1.1rem;
+            width: 100vw;
+            height: 20vh;
+            bottom: 0;
+        }
+        
+        footer p span {
+            color: #1f1f24;
+            margin-left: -4%;
+        }
+        
+        #icon-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #icon-container a {
+            text-decoration: none;
+        }
+        
+        #icon-container a img {
+            width: 11vw;
+            height: 11vw;
+            padding: 2vw;
+        }
+        
+        @media screen and (min-width: 1279px) {
+            /*Navigation menu*/
+            main {
+                display: grid;
+                grid-template-columns: 5% 90%;
+                grid-template-rows: 3% 90%;
+            }
+            nav {
+                display: flex;
+                flex-flow: column nowrap;
+                position: sticky;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                width: 5vw;
+                grid-column: 1 / 1;
+            }
+            nav a {
+                transform: rotate(-90deg);
+            }
+            #section-container {
+                display: flex;
+                flex-flow: column wrap;
+                grid-column: 2 / 2;
+            }
+            /*Sections*/
+            #clementina {
+                height: 60%;
+                width: 70%;
+            }
+            #rocinha {
+                height: 60%;
+                width: 70%
+            }
+            section {
+                grid-row: span 1;
+                height: 100vh;
+            }
+            #mercado {
+                height: 60%;
+                width: 70%;
+            }
+            footer {
+                bottom: 0;
+                width: 100vw;
+                padding-bottom: 300px;
+            }
+            footer {
+                display: flex;
+                height: 30vh;
+                width: 100%;
+            }
+            a #icon-container a img {
+                width: 10vw;
+                height: 10vw;
+                bottom: 0;
+                padding: 0;
+            }
+        }
