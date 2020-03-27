@@ -1,0 +1,146 @@
+/* Color pallete:
+#d2c2b0
+#1f1f24 */
+
+
+/*Geral*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Sen', sans-serif
+}
+
+body {
+    
+  background-color: #1f1f24;
+}
+
+/*Menu de navegação*/
+nav {
+  background-color: #d2c2b0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  position: sticky;
+  font-weight:bold;
+}
+
+/*Seções*/
+section {
+  background-color: #d2c2b0;
+  height: 80vh;
+  width: 80vw;
+  margin-right: 40px;
+  margin-left: 40px;
+  border: 2px solid #d2c2b0;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#logo-container {
+  display: grid;
+  justify-content: center;
+}
+
+#logo-container img {
+  margin-top: 3vh;
+  margin-left: 3vw;
+}
+
+/*foto - quem somos*/
+#rocinha {
+  height: 34%;
+  width: 50%;
+}
+
+/*foto - cases de sucesso*/
+#clementina {
+  height: 30%;
+  width: 50%;
+}
+
+#mercado {
+  height: 35%;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f24;
+}
+
+p {
+  margin-top: 5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+/*footer*/
+footer {
+  margin-top: 10vh;
+  background-color: #d2c2b0;
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items:flex-start;
+  font-size: 1.1rem;
+  width: 100vw;
+  height: 20vh;
+  bottom: 0;
+}
+
+footer p span {
+  color: #1f1f24;
+  margin-left: -4%;
+
+}
+
+#icon-container {
+  display: flex;
+  flex-direction:row;
+}
+
+#icon-container a {
+  text-decoration: none;
+}
+
+#icon-container a img {
+  width: 11vw;
+  height: 11vw;
+  padding: 2vw;
+}
+
+@media and screen and(min-width: 1280px)
+  {
+      footer
+      {
+          display: block;
+          height: 2vw;
+          width: 100%;
+      }
+
+      /* footer p span
+      {
+        /* display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-self:flex-start; 
+      } */
+
+      #icon-container a img
+      {
+        width: 1%;
+        height: 1%;
+        padding: 2%;
+      }
+      section {
+        height: 100vw;
+      }
+      #clementina {
+        height: 50%
+      }
+  }
